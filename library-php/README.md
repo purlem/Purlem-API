@@ -1,4 +1,5 @@
-= Installation
+Installation
+====================
 
 Obtain the latest version of the Purlem PHP Library bindings with:
 
@@ -19,6 +20,7 @@ Simple usage looks like:
     $response = Purlem::get_all_campaigns();
     echo $response;
 
-= Documentation
+Documentation
+====================
 
 Please see https://github.com/purlem/Purlem-API for up-to-date documentation.
