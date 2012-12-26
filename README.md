@@ -77,3 +77,111 @@ Limiting
 -------------
 
 You can perform up to 100 requests per 1 hour period for the same account. 
+
+
+Available Resources
+---------------
+
+**Get Contact**
+
+/v1/contacts/{CONTACT ID}
+
+```shell
+curl -u user:token  https://purlapi.com/v1/contacts/123
+```
+
+**Get By Contact**
+
+/v1/contacts/get_by/{FIELD}/{DATA}
+
+```shell
+curl -u user:token  https://purlapi.com/v1/contacts/get_by/purl/BobThomas
+```
+
+**Add Contact**
+/v1/contacts/add
+
+```shell
+curl -u user:token -X POST --data "campaignID=1051&firstName=Bob&lastName=Jones https://purlapi.com/v1/contacts/add
+```
+
+**Update Contact**
+
+/v1/contacts/update
+
+```shell
+curl -u user:token -X POST --data "contactID=123&company=XYZCorp" https://purlapi.com/v1/contacts/update
+```
+
+**Delete Contact**
+
+/v1/contacts/delete/{CONTACT ID}
+
+```shell
+curl -u user:token -X POST https://purlapi.com/v1/contacts/delete/123
+```
+
+**Get All Campaigns**
+
+/v1/campaigns
+
+```shell
+curl -u user:token  https://purlapi.com/v1/campaigns
+```
+
+**Get Campaign**
+
+/v1/campaigns/{CAMPAIGN ID}
+
+```shell
+curl -u user:token  https://purlapi.com/v1/campaigns/1
+```
+
+**Add instantPURL Campaign**
+
+/v1/campaigns/add/instantpurl
+
+```shell
+curl -u user:token -X POST --data "name=My-Campaign&template=default" https://purlapi.com/v1/campaigns/add/instantpurl
+```
+
+**Add FTP Campaign**
+
+/v1/campaigns/add/ftp
+
+```shell
+curl -u user:token -X POST --data "name=My-Campaign&template=default&url=http://mydomain.com&ftp_server=ftp.mydomain.com&ftp_username=myusername&ftp_password=mypassword&ftp_path=public_html" https://purlapi.com/v1/campaigns/add/ftp
+```
+
+**Update Campaign**
+
+/v1/campaigns/update
+
+```shell
+curl -u user:token -X POST --data "name=New-Name&campaignID=1" https://purlapi.com/v1/campaigns/update
+```
+
+**Delete Campaign**
+
+/v1/campaigns/delete/{CAMPAIGN ID}
+
+```shell
+curl -u user:token -X POST https://purlapi.com/v1/campaigns/delete/1
+```
+
+**Get Campaign's Results**
+
+/v1/results/{CAMPAIGN ID}
+
+```shell
+curl -u user:token https://purlapi.com/v1/results/1
+```
+
+**Delete Result**
+
+/v1/results/delete/{RESULT ID}
+
+```shell
+curl -u user:token -X POST https://purlapi.com/v1/results/delete/1523
+```
+
