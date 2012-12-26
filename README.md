@@ -22,10 +22,10 @@ Making a request
 
 All URLs start with `https://purlapi.com/v1/`. The path is prefixed with the the API version. 
 
-To make a request for all the results in a campaign, you'd append the campaign's index path to the base url to form something like https://purlapi.com/v1/results/{CAMPAIGN ID}.json. In curl, that looks like:
+To make a request for all the results in a campaign, you'd append the campaign's index path to the base url to form something like /results/{CAMPAIGN ID}. In curl, that looks like:
 
 ```shell
-curl -u user:token https://purlapi.com/v1/results/{CAMPAIGN ID}.json
+curl -u user:token https://purlapi.com/v1/results/{CAMPAIGN ID}
 ```
 
 To add,update or delete something, it's the same deal except you also have to POST the data. To add a contact it would look like:
