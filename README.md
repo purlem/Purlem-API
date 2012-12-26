@@ -17,7 +17,7 @@ curl -u user:token
 
 
 
-Making a request
+Request
 ----------------
 
 All URLs start with `https://purlapi.com/v1/`. The path is prefixed with the the API version. 
@@ -41,7 +41,7 @@ That's all!
 
 
 
-JSON Response
+Response
 -----------------
 
 All responses will use JSON for serialization of data. The response for adding a contact would be something like:
@@ -63,7 +63,7 @@ All responses will use JSON for serialization of data. The response for adding a
 ```
 
 
-Handling errors
+Errors
 ---------------
 
 If there is a problem with your request you will receive 4xx error, along with JSON data describing the error.  An error response may look like:
@@ -73,7 +73,7 @@ If there is a problem with your request you will receive 4xx error, along with J
 ```
 
 
-Rate limiting
+Limiting
 -------------
 
 You can perform up to 100 requests per 1 hour period for the same account. 
