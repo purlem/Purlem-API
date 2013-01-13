@@ -185,3 +185,43 @@ curl -u user:token https://purlapi.com/v1/results/1
 curl -u user:token -X POST https://purlapi.com/v1/results/delete/1523
 ```
 
+**Get All Clients**
+
+/v1/clients
+
+```shell
+curl -u user:token  https://purlapi.com/v1/clients
+```
+
+**Get Client**
+
+/v1/campaigns/{CLIENT ID}
+
+```shell
+curl -u user:token  https://purlapi.com/v1/clients/1
+```
+
+**Add Client**
+
+/v1/campaigns/add/client
+
+```shell
+curl -u user:token -X POST --data "name=ClientName&username=user&password=pass&planID=2" https://purlapi.com/v1/clients/add
+```
+
+**Update Client**
+
+/v1/clients/update
+
+```shell
+curl -u user:token -X POST --data "clientID=1name=ClientName&username=user&password=pass&planID=2" https://purlapi.com/v1/clients/update
+```
+
+**Delete Client**
+
+/v1/campaigns/delete/{CLIENT ID}
+
+```shell
+curl -u user:token -X POST https://purlapi.com/v1/cleints/delete/1
+```
+
