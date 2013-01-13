@@ -67,6 +67,26 @@ class Purlem
 	 return self::_curlRequest('post','/results/delete/'.$result_id);
   }
     
+  public function get_client($client_id) {
+	 return self::_curlRequest('get','/clients/'.$client_id);
+  }
+  
+  public function get_all_clients() {
+	 return self::_curlRequest('get','/clients');
+  }
+  
+  public function add_client($params) {
+	 return self::_curlRequest('post','/clients/add', $params);
+  }
+  
+  public function update_client($params) {
+	 return self::_curlRequest('post','/clients/update', $params);
+  }
+  
+  public function delete_client($client_id) {
+	 return self::_curlRequest('post','/clients/delete/'.$client_id);
+  }
+  
   private function _curlRequest($meth, $url, $params=array(0)) {
 	
 	$ch = curl_init();
