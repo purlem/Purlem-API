@@ -9,10 +9,10 @@ Purlem::connect($userID,$token);
 // Add FTP Campaign
 $response = Purlem::add_ftp_campaign(array('name' => 'New-Campaign', //Required:  Campaign Name
 										   'template' => 'default', //Required:  Template
-										   'url' => 'http://purlsvnpage.com', //Required:  URL
-										   'ftp_server' => 'ftp.purlsvnpage.com', //Required:  FTP Server
-										   'ftp_username' => 'purlsvnp', //Required:  FTP Username
-										   'ftp_password' => 'v$)t1A;C{zy^', //Required:  FTP Password
+										   'url' => 'http://domain.com', //Required:  URL
+										   'ftp_server' => 'ftp.domain.com', //Required:  FTP Server
+										   'ftp_username' => 'user', //Required:  FTP Username
+										   'ftp_password' => 'xxxxxxxx', //Required:  FTP Password
 										   'ftp_path' => 'public_html') //Required:  FTP Path
 										   );
 echo $response;
