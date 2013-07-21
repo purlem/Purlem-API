@@ -7,7 +7,7 @@ $token = 'xxxxxxxxxxxxx'; //Enter your API Token here
 Purlem::connect($userID,$token);
 
 // Update Contact
-$response = Purlem::update_contact(array('contactiD' => 'XXX', //Required: The Contact ID to update
+$response = Purlem::update_contact(array('contactID' => 'XXX', //Required: The Contact ID to update
 								      'firstName' => 'Alex', //Optional: First Name
 									  'lastName' => 'Brown', //Optional: Last Name
 									  'company' => 'XYZCorp', //Optional: Company
