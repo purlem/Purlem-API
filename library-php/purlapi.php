@@ -43,6 +43,10 @@ class Purlem
 	 return self::_curlRequest('get','/campaigns/'.$campaign_id);
   }
   
+  public function get_all_campaign_contacts($campaign_id) {
+	 return self::_curlRequest('get','/campaigns/'.$campaign_id.'/contacts');
+  }
+  
   public function add_instantpurl_campaign($params) {
 	 return self::_curlRequest('post','/campaigns/add/instantpurl', $params);
   }

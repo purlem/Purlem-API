@@ -129,6 +129,14 @@ curl -u user:token -X POST https://purlapi.com/v1/contacts/delete/123
 curl -u user:token  https://purlapi.com/v1/campaigns
 ```
 
+**Get All Campaign Contacts**
+
+/v1/campaigns/{CAMPAIGN ID}/contacts
+
+```shell
+curl -u user:token  https://purlapi.com/v1/campaigns/1/contacts
+```
+
 **Get Campaign**
 
 /v1/campaigns/{CAMPAIGN ID}
