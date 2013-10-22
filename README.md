@@ -98,6 +98,22 @@ curl -u user:token  https://purlapi.com/v1/contacts/123
 curl -u user:token  https://purlapi.com/v1/contacts/get_by/purl/BobThomas
 ```
 
+**Get Many Where Exist**
+
+/v1/contacts/get_many_where_exists/{FIELD}
+
+```shell
+curl -u user:token  https://purlapi.com/v1/contacts/get_many_where_exists/email
+```
+
+**Get All Campaign Contacts**
+
+/v1/contacts/get_all_campaign_contacts/{CAMPAIGN ID}
+
+```shell
+curl -u user:token  https://purlapi.com/v1/contacts/get_all_campaign_contacts/123
+```
+
 **Add Contact**
 /v1/contacts/add
 
