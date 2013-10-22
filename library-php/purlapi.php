@@ -27,6 +27,10 @@ class Purlem
 	 return self::_curlRequest('get','/contacts/get_many_where_exists/'.$field);
   }
   
+   public function get_many_by($field, $data) {
+	 return self::_curlRequest('get','/contacts/get_many_by/'.$field.'/'.$data);
+  }
+  
   public function add_contact($params) {
 	 return self::_curlRequest('post','/contacts/add', $params);
   }

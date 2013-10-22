@@ -98,6 +98,14 @@ curl -u user:token  https://purlapi.com/v1/contacts/123
 curl -u user:token  https://purlapi.com/v1/contacts/get_by/purl/BobThomas
 ```
 
+**Get Many By Contact**
+
+/v1/contacts/get_by/{FIELD}/{DATA}
+
+```shell
+curl -u user:token  https://purlapi.com/v1/contacts/get_many_by/purl/BobThomas
+```
+
 **Get Many Where Exist**
 
 /v1/contacts/get_many_where_exists/{FIELD}
