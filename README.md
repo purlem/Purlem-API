@@ -161,6 +161,14 @@ curl -u user:token  https://purlapi.com/v1/campaigns
 curl -u user:token  https://purlapi.com/v1/campaigns/1/contacts
 ```
 
+**Get Campaign Fields**
+
+/v1/campaigns/{CAMPAIGN ID}/get_fields
+
+```shell
+curl -u user:token  https://purlapi.com/v1/campaigns/1/get_fields
+```
+
 **Get Campaign**
 
 /v1/campaigns/{CAMPAIGN ID}

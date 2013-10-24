@@ -51,6 +51,10 @@ class Purlem
 	 return self::_curlRequest('get','/campaigns/'.$campaign_id);
   }
   
+  public function get_campaign_fields($campaign_id) {
+	 return self::_curlRequest('get','/campaigns/'.$campaign_id.'/get_fields');
+  }
+  
   public function get_all_campaign_contacts($campaign_id) {
 	 return self::_curlRequest('get','/campaigns/'.$campaign_id.'/contacts');
   }
