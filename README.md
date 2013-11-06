@@ -259,7 +259,7 @@ curl -u user:token -X POST --data "clientID=1name=ClientName&username=user&passw
 
 **Delete Client**
 
-/v1/campaigns/delete/{CLIENT ID}
+/v1/cleints/delete/{CLIENT ID}
 
 ```shell
 curl -u user:token -X POST https://purlapi.com/v1/cleints/delete/1
