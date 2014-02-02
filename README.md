@@ -217,6 +217,14 @@ curl -u user:token -X POST https://purlapi.com/v1/campaigns/delete/1
 curl -u user:token https://purlapi.com/v1/results/1
 ```
 
+**Get Contact's Results**
+
+/v1/results/get_contact/{CONTACT ID}
+
+```shell
+curl -u user:token https://purlapi.com/v1/results/get_contact/1
+```
+
 **Delete Result**
 
 /v1/results/delete/{RESULT ID}
