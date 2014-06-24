@@ -273,3 +273,10 @@ curl -u user:token -X POST --data "clientID=1name=ClientName&username=user&passw
 curl -u user:token -X POST https://purlapi.com/v1/cleints/delete/1
 ```
 
+**Get Customfield**
+
+/v1/customfields/{CUSTOMFIELD ID}
+
+```shell
+curl -u user:token  https://purlapi.com/v1/customfields/123
+```
