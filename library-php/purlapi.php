@@ -103,6 +103,10 @@ class Purlem
 	 return self::_curlRequest('post','/clients/delete/'.$client_id);
   }
   
+  public function get_customfield($customfield_id) {
+	 return self::_curlRequest('get','/customfields/'.$customfield_id);
+  }
+  
   private function _curlRequest($meth, $url, $params=array(0)) {
 	
 	$ch = curl_init();
