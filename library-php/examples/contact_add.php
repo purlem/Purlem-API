@@ -32,7 +32,7 @@ if($_POST) {
 	//Success
 	else {
 		//Redirect to PURL (Optional)
-		header( 'Location: http://'. $response->data->purl ) ;
+		header( 'Location: '. $response->data->purl ) ;
 		exit;
 	}						  							  
 }
