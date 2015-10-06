@@ -114,14 +114,6 @@ curl -u user:token  https://purlapi.com/v1/contacts/get_many_by/purl/BobThomas
 curl -u user:token  https://purlapi.com/v1/contacts/get_many_where_exists/email
 ```
 
-**Get All Campaign Contacts**
-
-/v1/contacts/get_all_campaign_contacts/{CAMPAIGN ID}
-
-```shell
-curl -u user:token  https://purlapi.com/v1/contacts/get_all_campaign_contacts/123
-```
-
 **Add Contact**
 /v1/contacts/add
 
@@ -159,6 +151,14 @@ curl -u user:token  https://purlapi.com/v1/campaigns
 
 ```shell
 curl -u user:token  https://purlapi.com/v1/campaigns/1/contacts
+```
+
+**Get All Campaign Contacts Where Exist**
+
+/v1/campaigns/{CAMPAIGN ID}/contacts_where_exists/{FIELD}
+
+```shell
+curl -u user:token  https://purlapi.com/v1/campaigns/1/contacts_where_exists/email
 ```
 
 **Get Campaign Fields**
