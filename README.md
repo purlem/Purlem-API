@@ -100,7 +100,7 @@ curl -u user:token  https://purlapi.com/v1/contacts/get_by/purl/BobThomas
 
 **Get Many By Contact**
 
-/v1/contacts/get_by/{FIELD}/{DATA}
+/v1/contacts/get_many_by/{FIELD}/{DATA}
 
 ```shell
 curl -u user:token  https://purlapi.com/v1/contacts/get_many_by/purl/BobThomas
