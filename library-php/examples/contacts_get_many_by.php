@@ -7,7 +7,8 @@ $token = 'xxxxxxxxxxxxx'; //Enter your API Token here
 Purlem::connect($userID,$token);
 
 // Get All Campaign Contacts
-$campaign_id = 'XXXX'; //The Campaign ID to get
-$response = Purlem::get_all_campaign_contacts($campaign_id);
+$field = 'xxxxxx'; //The field to search in.  EX: 'firstName', 'company', 'purl'
+$data = 'xxxxxx'; //The data to search.  EX: 'Tom', 'Apple', 'TomJones' 
+$response = Purlem::get_many_by(array($field,$data));
 echo $response;
 ?>
