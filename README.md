@@ -161,6 +161,14 @@ curl -u user:token  https://purlapi.com/v1/campaigns/1/contacts
 curl -u user:token  https://purlapi.com/v1/campaigns/1/contacts_where_exists/email
 ```
 
+**Get All Campaign Contacts Since**
+
+/v1/campaigns/{CAMPAIGN ID}/contacts/since/{MINUTES}
+
+```shell
+curl -u user:token  https://purlapi.com/v1/campaigns/1/contacts/since/5
+```
+
 **Get Campaign Fields**
 
 /v1/campaigns/{CAMPAIGN ID}/get_fields
@@ -215,6 +223,14 @@ curl -u user:token -X POST https://purlapi.com/v1/campaigns/delete/1
 
 ```shell
 curl -u user:token https://purlapi.com/v1/results/1
+```
+
+**Get Campaign's Results Since**
+
+/v1/results/{CAMPAIGN ID}/since/{MINUTES}
+
+```shell
+curl -u user:token https://purlapi.com/v1/results/1/since/5
 ```
 
 **Get Contact's Results**
