@@ -283,16 +283,16 @@ curl -u user:token -X POST --data "clientID=1name=ClientName&username=user&passw
 
 **Delete Client**
 
-/v1/cleints/delete/{CLIENT ID}
+/v1/clients/delete/{CLIENT ID}
 
 ```shell
-curl -u user:token -X POST https://purlapi.com/v1/cleints/delete/1
+curl -u user:token -X POST https://purlapi.com/v1/clients/delete/1
 ```
 
 **Get Customfield**
 
-/v1/customfields/{CUSTOMFIELD ID}
+/v1/customfields/get/{CUSTOMFIELD ID}
 
 ```shell
-curl -u user:token  https://purlapi.com/v1/customfields/123
+curl -u user:token  https://purlapi.com/v1/customfields/get/123
 ```
